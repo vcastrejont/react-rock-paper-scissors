@@ -1,15 +1,23 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Timeline extends Component {
-  render() {
-    return (
-      <div id="timeline">
-        <img src="assets/images/mini-r.png" alt="rock" />
-        <hr />
-        <img src="assets/images/mini-p.png" alt="papper" />
-      </div>
-    );
-  }
-}
+const Timeline = props => {
+  return (
+    <div id="timeline">
+      {props.results.map((row, i) => (
+        <div className="row" key={i}>
+          <img
+            src={`assets/images/mini-${row[0].substr(0, 1)}.png `}
+            alt={row[0]}
+          />
+          <hr />
+          <img
+            src={`assets/images/mini-${row[1].substr(0, 1)}.png `}
+            alt={row[1]}
+          />
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export default Timeline;
