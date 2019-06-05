@@ -2,7 +2,7 @@ import React from "react";
 
 const Timeline = props => {
   return (
-    <div id="timeline">
+    <div id="timeline" aria-live="assertive">
       {props.results.map((row, i) => (
         <div className="row" key={i}>
           <img

@@ -31,6 +31,10 @@ header {
         }
     }
 
+    #info {
+        font-size: .9rem;
+    }
+
     hr {
         border: 2px solid #81d4fa;
         width: 50px;
@@ -55,7 +59,7 @@ header {
             border: 4px solid $rock-color;
         }
 
-        &.papper {
+        &.paper {
             background-image: url(/assets/images/mini-p.png);
             border: 4px solid $paper-color;
         }
@@ -86,16 +90,17 @@ header {
     align-content: center;
     margin-bottom: 20px;
 
-    >div {
+    .col {
         text-align: center;
         vertical-align: bottom;
         padding: 5px;
+        width: 80px;
 
         h2 {
             font-weight: bold;
         }
 
-        p {
+        >div {
             font-size: 3rem;
             font-weight: bold;
         }

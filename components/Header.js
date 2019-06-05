@@ -2,9 +2,10 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header>
-      <h1>
-        <span>Rock</span>, <span>Papper</span> & <span>Scissors</span>
+    <header aria-labelledby="title" aria-describedby="info">
+      <h1 id="title">
+        <span>Rock</span>, <span>Paper</span> & <span>Scissors</span>
+        <p id="info">Press one of the following buttons to start playing</p>
       </h1>
       <hr />
     </header>

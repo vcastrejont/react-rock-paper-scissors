@@ -8,18 +8,21 @@ const Buttons = props => {
         aria-label="rock"
         onClick={props.action}
         value="rock"
+        accessKey="r"
       />
       <button
-        className="papper"
-        aria-label="Papper"
+        className="paper"
+        aria-label="Paper"
         onClick={props.action}
-        value="papper"
+        value="paper"
+        accessKey="p"
       />
       <button
         className="scissors"
         aria-label="Scissors"
         onClick={props.action}
         value="scissors"
+        accessKey="s"
       />
     </div>
   );
